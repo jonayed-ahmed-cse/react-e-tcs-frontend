@@ -7,6 +7,8 @@ import AddRetailerPage from '@/features/retailers/pages/AddRetailerPage'
 import EditRetailerPage from '@/features/retailers/pages/EditRetailerPage'
 import RetailerDetailsPage from '@/features/retailers/pages/RetailerDetailsPage'
 import RetailerListPage from '@/features/retailers/pages/RetailerListPage'
+import CollectTCSPage from '@/features/collections/pages/CollectTCSPage'
+import CollectionsPage from '@/features/collections/pages/CollectionsPage'
 
 export const router = createBrowserRouter([
   {
@@ -34,13 +36,12 @@ export const router = createBrowserRouter([
         element: <EditRetailerPage />,
       },
       {
+        path: 'collect-tcs',
+        element: <CollectTCSPage />,
+      },
+      {
         path: 'collections',
-        element: (
-          <PlaceholderPage
-            title="Collections"
-            description="Manage TCS collection transactions."
-          />
-        ),
+        element: <CollectionsPage />,
       },
       {
         path: 'challan',
@@ -57,15 +58,6 @@ export const router = createBrowserRouter([
           <PlaceholderPage
             title="RSO Management"
             description="Manage RSO information."
-          />
-        ),
-      },
-      {
-        path: 'collect-tcs',
-        element: (
-          <PlaceholderPage
-            title="Collect TCS"
-            description="Collect tax from a retailer."
           />
         ),
       },
