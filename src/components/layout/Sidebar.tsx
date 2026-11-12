@@ -22,19 +22,12 @@ const navigation = [
 function Sidebar() {
   return (
     <aside className="hidden min-h-screen w-64 shrink-0 flex-col border-r border-border bg-surface lg:flex">
-      <div className="flex h-20 items-center gap-3 border-b border-border px-6">
+      <div className="flex h-20 items-center px-5">
         <img
           src={nbrGovernmentLogo}
           alt="Government of Bangladesh"
-          className="size-11 shrink-0 object-contain"
+          className="size-60 shrink-0 object-contain"
         />
-
-        <div>
-          <p className="text-sm font-bold tracking-wide text-foreground">
-            NBR BANGLADESH
-          </p>
-          <p className="text-xs text-muted">Retailer TCS Management</p>
-        </div>
       </div>
 
       <nav className="flex-1 space-y-1 px-3 py-6">
